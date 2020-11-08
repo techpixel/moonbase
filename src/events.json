@@ -1,0 +1,47 @@
+{
+        "Fuel Tank Repair":{
+            "desc":"Status check from tank. Gas Leaking. Repair Fuel Tank immediately.",
+            "opt":[
+                ["Fix", ["Systems", 1]],
+                ["Leave Alone", ["Systems", -1], ["Fuel", -1]]
+            ]
+        },
+        "External Engine Repair":{
+            "desc":"An External Engine needs repair. May harm user.",
+            "opt":[ 
+                ["Repair", ["Systems", 1], ["Health", -1]],
+                ["Leave Alone", ["Systems", -1]]
+            ]
+        },
+        "Oxygen Refill":{
+            "desc":"Refill Oxygen. Will take fuel.",
+            "opt":[
+                ["Refill", ["Health", 1], ["Fuel", -1]],
+                ["Store Fuel", ["Fuel", 1]]
+            ]
+        },"Optional Collection":{
+            "desc":"Optionally look for Materials or Fuel",
+            "opt":[
+                ["Find Fuel", ["Fuel", 1]],
+                ["Find Materials", ["Materials", 1]]
+            ]
+        },"Moonbuggy Crashed":{
+            "desc":"A scout moonbuggy has crashed. Repair the moonbuggy or salvage it for parts.",
+            "opt":[
+                ["Repair", ["Systems", 2]],
+                ["Salvage", ["Materials", 1]]
+            ]
+        },"Inefficent Burning":{
+            "desc":"Furnace burning increasing oxygen. Continus burning may result in damage",
+            "opt":[
+                ["Continue Burn", ["Systems", -1], ["Health", 1], ["Fuel", -2]],
+                ["Efficent Burn", ["Systems", 1], ["Fuel", -1]]
+            ]
+        },"Power Overflow":{
+            "desc":"Error: Power Overflow. Destroy a system or burn extra fuel.",
+            "opt":[
+                ["Destroy", ["Systems", -1]],
+                ["Burn", ["Fuel", -2]]
+            ]
+        }
+}

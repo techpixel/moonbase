@@ -1,0 +1,29 @@
+[
+    {
+        "Improved Farming Station":{
+            "requires":2
+        },
+        "Increased Oxygen Tank":{
+            "requires":2
+        },
+        "Mining Station":{
+            "requires":3
+        },
+    },
+    {
+        "ComSat":{
+            "requires":3
+        },
+        "Rocket Core":{
+            "requires":4
+        },
+        "Rocket":{
+            "requires":4
+        }
+    },
+    {
+        "Launch":{
+            "requires":5
+        }
+    }
+]
